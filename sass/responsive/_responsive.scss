@@ -1,0 +1,136 @@
+//  tablet
+@media (max-width: 800px) {
+  // index
+  .skills {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .what-did {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.2rem;
+    .award {
+      background-color: #f4f4f4;
+    }
+    .project {
+      background-color: #ccc;
+    }
+  }
+  .works {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .works > div > div span {
+    top: -8%;
+    left: 63%;
+  }
+  // About
+  .about-me .container {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    .about-me-photo {
+      grid-column: 2/3;
+    }
+    .about-me-content {
+      padding: none;
+      grid-column: span 3;
+      border-top: 3px solid crimson;
+      border-left: none;
+    }
+  }
+  .comment {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  // works
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
+    .display-none {
+      display: none;
+    }
+  }
+}
+// small phone
+
+@media (max-width: 600px) {
+  // index
+  .skills {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 3.5rem;
+  }
+  .what-did {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 0.2rem;
+    .award {
+      background-color: #ccc;
+    }
+    .project {
+      background-color: #f4f4f4;
+    }
+  }
+  .works {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 3rem;
+  }
+  .works > div > div span {
+    top: -8%;
+    left: 58%;
+  }
+  // about
+  .about-me-content {
+    border-top: none !important;
+  }
+  .about-me-photo {
+    position: relative;
+    &::after {
+      margin-top: 12px;
+      content: "";
+      position: absolute;
+      top: 80%;
+      left: 50%;
+      width: 50px;
+      height: 3px;
+      background-color: crimson;
+      -webkit-transform: translate(-50%, 0%);
+      -moz-transform: translate(-50%, 0%);
+      -ms-transform: translate(-50%, 0%);
+      -o-transform: translate(-50%, 0%);
+      transform: translate(-50%, 0%);
+    }
+  }
+  .awards .container {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 3rem;
+  }
+  .comment {
+    grid-template-columns: none;
+    > div {
+      display: grid;
+      > p {
+        order: 2;
+        margin-top: 0.8rem;
+      }
+    }
+  }
+  // works
+  .gallery {
+    grid-template-columns: repeat(1, 1fr);
+    .display-none {
+      display: block;
+    }
+  }
+  // contact me
+  .contact-menu {
+    display: grid;
+    gap: 2rem;
+    grid-template-areas:
+      "name"
+      "email"
+      "subject"
+      "phone"
+      "text";
+  }
+  .information {
+    grid-template-columns: repeat(1, 1fr);
+    .single-information {
+      padding: 1.5rem 0;
+      border-bottom: 1px solid white;
+    }
+  }
+}

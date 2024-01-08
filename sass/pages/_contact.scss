@@ -1,0 +1,96 @@
+.contact-menu {
+  display: grid;
+  gap: 2rem;
+  grid-template-areas:
+    "name email"
+    "subject phone"
+    "text text";
+  .name {
+    grid-area: name;
+    padding: 0.5rem 1rem;
+  }
+  .email {
+    grid-area: email;
+    padding: 0.5rem 1rem;
+  }
+  .subject {
+    grid-area: subject;
+    padding: 0.5rem 1rem;
+  }
+  .phone {
+    grid-area: phone;
+    padding: 0.5rem 1rem;
+  }
+  .text {
+    grid-area: text;
+    height: 200px;
+    resize: none;
+    padding: 0.5rem 1rem;
+  }
+}
+.name,
+.email,
+.subject,
+.phone,
+.text {
+  border: 1px solid black;
+  border-radius: 1px;
+  &:focus {
+    outline: 1px solid $main-color;
+    border-radius: 1px;
+  }
+}
+.contact-me {
+  h2 {
+    font-size: 2rem;
+    position: relative;
+  }
+}
+.btn {
+  outline: none;
+  border: none;
+  color: white;
+  background-color: $dark-color;
+  width: 40%;
+  padding: 1rem 2rem;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.2s;
+  border-radius: 3px;
+  &:focus {
+    outline: none;
+    border: none;
+  }
+  &:hover {
+    background-color: $main-color;
+    color: white;
+  }
+}
+.btn-parent {
+  display: flex;
+  justify-content: center;
+}
+// information
+.information-org {
+  background-color: $dark-color;
+  border-bottom: 3px solid white;
+}
+.information {
+  padding: 4rem 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  .single-information {
+    text-align: center;
+    color: white;
+    h4 {
+      margin: 1.5rem 0;
+    }
+    i {
+      color: $main-color;
+      font-size: 50px;
+    }
+  }
+}

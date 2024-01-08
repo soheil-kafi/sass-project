@@ -1,0 +1,120 @@
+.hero {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  h2 {
+    color: white;
+    font-size: 30px;
+  }
+
+  P {
+    color: white;
+  }
+}
+// skills
+.top-skill {
+  padding: 2.5rem 0;
+  h2 {
+    text-transform: uppercase;
+    position: relative;
+  }
+}
+.skills {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.3rem;
+
+  h3 {
+    margin: 1rem 0;
+  }
+  i {
+    font-size: 50px;
+  }
+  .js {
+    color: #f7df1e;
+  }
+  .vue {
+    color: #42b883;
+  }
+  .react {
+    color: #00d8ff;
+  }
+  .angular {
+    color: #b52e31;
+  }
+}
+// whats did
+.what-did {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+
+  > div {
+    background-color: $light-color;
+    padding: 37px;
+    i {
+      color: $main-color;
+      font-size: 50px;
+    }
+    h3 {
+      margin: 1rem 0;
+      font-size: 1.8rem;
+    }
+    p {
+      font-weight: bold;
+      font-size: 30px;
+    }
+  }
+  .award,
+  .client {
+    background-color: $medium-color;
+  }
+}
+// jobs
+.works {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.3rem;
+
+  > div {
+    > div {
+      position: relative;
+      i {
+        background-color: $dark-color;
+        font-size: 50px;
+        color: white;
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+      }
+      span {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: $main-color;
+        color: white;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        position: absolute;
+        top: 0;
+        left: 70%;
+        transform: translate(-50%, 0px);
+      }
+    }
+    h4 {
+      margin: 1rem 0;
+    }
+    p {
+      line-height: 1.5rem;
+    }
+  }
+}
+.jobs h2 {
+  position: relative;
+}

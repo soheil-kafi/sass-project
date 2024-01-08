@@ -1,0 +1,14 @@
+// config
+@import "config/vars";
+@import "config/utilities";
+@import "config/reset";
+// layout
+@import "layout/header";
+@import "layout/footer";
+// pages
+@import "pages/index";
+@import "pages/about";
+@import "pages/work";
+@import "pages/contact";
+// responsive
+@import "responsive/responsive";
